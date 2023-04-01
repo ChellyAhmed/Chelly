@@ -1,10 +1,10 @@
 import './App.css';
+import Home from './screens/Home';
 
 function App() {
+  console.log("Hello World!")
   return (
-    <h1>
-      Hello World!
-    </h1>
+   <Home/>
   );
 }
 
