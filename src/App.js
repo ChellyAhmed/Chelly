@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './screens/Home';
@@ -18,10 +19,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  console.log("Hello World!")
+  const [selectedPage, setSelectedPage] = useState("home");
+  const newPage = (page) => {
+    setSelectedPage(page);
+  }
   return (
     <>
-    <Navbar/>
+    <Navbar selectedPage={selectedPage} newPage={newPage}/>
     <RouterProvider router={router} />
     </>
   );

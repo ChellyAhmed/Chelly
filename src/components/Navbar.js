@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './navbar.css';
 
-function Navbar() {
+function Navbar({ selectedPage, newPage }) {
   const [showLinks, setShowLinks] = useState(false);
   const navbarRef = useRef(null);
 
@@ -22,16 +22,20 @@ function Navbar() {
     };
   }, []);
 
+  const changePage = (page) => {
+    newPage(page);
+  }
+
   return (
     <nav className="navbar" ref={navbarRef}>
       <button className="navbar-toggle" onClick={handleToggle}>
         <span className="navbar-toggle-icon"></span>
       </button>
       <div className={`navbar-links ${showLinks ? 'active' : ''}`}>
-        <a href="#home" onClick={() => {setShowLinks(false)}} >Home</a>
-        <a href="#about" onClick={() => {setShowLinks(false)}} >About</a>
-        <a href="#portfolio" onClick={() => {setShowLinks(false)}} >Portfolio</a>
-        <a href="#contact" onClick={() => {setShowLinks(false)}} >Contact</a>
+        <a className={`${selectedPage === 'home' ? 'selected' : ''}`} href="#home" onClick={() => { setShowLinks(false); changePage("home") }} >Home</a>
+        <a className={`${selectedPage === 'about' ? 'selected' : ''}`} href="#about" onClick={() => { setShowLinks(false); changePage("about") }} >About</a>
+        <a className={`${selectedPage === 'portfolio' ? 'selected' : ''}`} href="#portfolio" onClick={() => { setShowLinks(false); changePage("portfolio") }} >Portfolio</a>
+        <a className={`${selectedPage === 'contact' ? 'selected' : ''}`} href="#contact" onClick={() => { setShowLinks(false); changePage("contact") }} >Contact</a>
       </div>
     </nav>
   );
