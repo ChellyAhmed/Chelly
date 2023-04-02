@@ -1,32 +1,24 @@
-import { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './screens/Home';
 import {
-  createBrowserRouter,
-  RouterProvider,
+  BrowserRouter,
+  Route,
+  Routes,
 } from "react-router-dom";
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-    errorElement: <h1>Error</h1>,
-  },
-  {
-    path: "/About",
-    element: <Home />,
-  },
-]);
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState("home");
-  const newPage = (page) => {
-    setSelectedPage(page);
-  }
   return (
     <>
-    <Navbar selectedPage={selectedPage} newPage={newPage}/>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+    <Navbar/>
+    <Routes>
+      <Route path="/" element={<Home />} errorElement={<h1>Error</h1>} />
+      <Route path="/about" element={<Home />} errorElement={<h1>Error</h1>} />
+      <Route path="/portfolio" element={<Home />} errorElement={<h1>Error</h1>} />
+      <Route path="/contact" element={<Home />} errorElement={<h1>Error</h1>} />
+    </Routes>
+    </BrowserRouter>
     </>
   );
 }

@@ -1,7 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './navbar.css';
+import { Link, useLocation } from 'react-router-dom';
 
-function Navbar({ selectedPage, newPage }) {
+function Navbar() {
+  const thisPage = useLocation().pathname.slice(1) ;
+
+  const [selectedPage, setSelectedPage] = useState(thisPage);
   const [showLinks, setShowLinks] = useState(false);
   const navbarRef = useRef(null);
 
@@ -22,20 +26,16 @@ function Navbar({ selectedPage, newPage }) {
     };
   }, []);
 
-  const changePage = (page) => {
-    newPage(page);
-  }
-
   return (
     <nav className="navbar" ref={navbarRef}>
       <button className="navbar-toggle" onClick={handleToggle}>
         <span className="navbar-toggle-icon"></span>
       </button>
       <div className={`navbar-links ${showLinks ? 'active' : ''}`}>
-        <a className={`${selectedPage === 'home' ? 'selected' : ''}`} href="#home" onClick={() => { setShowLinks(false); changePage("home") }} >Home</a>
-        <a className={`${selectedPage === 'about' ? 'selected' : ''}`} href="#about" onClick={() => { setShowLinks(false); changePage("about") }} >About</a>
-        <a className={`${selectedPage === 'portfolio' ? 'selected' : ''}`} href="#portfolio" onClick={() => { setShowLinks(false); changePage("portfolio") }} >Portfolio</a>
-        <a className={`${selectedPage === 'contact' ? 'selected' : ''}`} href="#contact" onClick={() => { setShowLinks(false); changePage("contact") }} >Contact</a>
+        <Link className={`${selectedPage === '' ? 'selected' : ''}`} to={"/"} onClick={() => { setShowLinks(false); setSelectedPage("") }} >Home</Link>
+        <Link className={`${selectedPage === 'about' ? 'selected' : ''}`} to={"about"} onClick={() => { setShowLinks(false); setSelectedPage("about") }} >About</Link>
+        <Link className={`${selectedPage === 'portfolio' ? 'selected' : ''}`} to={"portfolio"} onClick={() => { setShowLinks(false); setSelectedPage("portfolio") }} >Portfolio</Link>
+        <Link className={`${selectedPage === 'contact' ? 'selected' : ''}`} to={"contact"} onClick={() => { setShowLinks(false); setSelectedPage("contact") }} >Contact</Link>
       </div>
     </nav>
   );
