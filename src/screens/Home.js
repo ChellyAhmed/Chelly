@@ -1,3 +1,4 @@
+import IconsBar from '../components/IconsBar';
 //import bootstrap icons:
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
@@ -10,24 +11,7 @@ function Home() {
                 I'm Ahmed Chelly. <br />
                 I'm a software engineer and a UX designer.
             </p>
-
-            <div className="icons" >
-                <a href="#">
-                    <i className="bi bi-linkedin"/>
-                </a>
-                <a href="#">
-                    <i className="bi bi-behance" />
-                </a>
-                <a href="#">
-                    <i className="bi bi-github"/>
-                </a>
-                <a href="#">
-                    <i className="bi bi-whatsapp"/>
-                </a>
-                <a href="#">
-                    <i className="bi bi-envelope-at-fill"/>
-                </a>
-            </div>
+            <IconsBar/>
 
         </div>
     );
