@@ -1,4 +1,5 @@
 import './App.css';
+import Navbar from './components/Navbar';
 import Home from './screens/Home';
 import {
   createBrowserRouter,
@@ -19,7 +20,10 @@ const router = createBrowserRouter([
 function App() {
   console.log("Hello World!")
   return (
+    <>
+    <Navbar/>
     <RouterProvider router={router} />
+    </>
   );
 }
 
