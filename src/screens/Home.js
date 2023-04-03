@@ -1,6 +1,8 @@
 import IconsBar from '../components/IconsBar';
 //import bootstrap icons:
 import 'bootstrap-icons/font/bootstrap-icons.css';
+
+import '../styles/dist/home.css';
 import Button from '../components/Button';
 import avatar from '../assets/avatar.jpg';
 import smile from '../assets/smile.png';

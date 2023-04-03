@@ -1,3 +1,5 @@
+import '../styles/dist/iconsBar.css'
+
 function IconsBar() {
     return (
         <div className="icons" >

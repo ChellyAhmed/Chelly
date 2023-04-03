@@ -1,0 +1,21 @@
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.icons a {
+  color: #fff;
+  text-decoration: none;
+  transform: scale(1);
+  transition: transform 0.1s ease-in-out;
+}
+.icons a:hover {
+  transform: scale(1.5);
+  transition: transform 0.1s ease-in-out;
+}
+
+/*# sourceMappingURL=iconsBar.css.map */

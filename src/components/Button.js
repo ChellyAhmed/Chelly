@@ -1,5 +1,5 @@
 import React from 'react';
-import './button.css'; // import the CSS file for styling
+import '../styles/dist/button.css'; // import the CSS file for styling
 
 const Button = ({ text }) => {
   return (

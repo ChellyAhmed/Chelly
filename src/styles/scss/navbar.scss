@@ -1,5 +1,7 @@
+@import "variables";
+
 .navbar {
-    background-color: #fff;
+    background-color: $white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
     display: flex;
     justify-content: space-between;
@@ -24,7 +26,7 @@
   .navbar-toggle-icon,
   .navbar-toggle-icon::before,
   .navbar-toggle-icon::after {
-    background-color: #386388;
+    background-color: $primary;
     content: '';
     display: block;
     height: 2px;
@@ -63,17 +65,25 @@
     height: 0;
     overflow: hidden;
     transition: all 0.2s ease-in-out;
-  }
-  
-  .navbar-links.active {
-    height: 120px;
-  }
-  
-  .navbar-links a {
-    color: #386388;
-    text-decoration: none;
-    margin: 10px 20px;
-    font-weight: 600;
+
+    a {
+      color: $primary;
+      text-decoration: none;
+      margin: 10px 20px;
+      font-weight: 600;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.selected {
+        font-weight: 900;
+      }
+    }
+
+    &.active {
+      height: 120px;
+    }
   }
   
   @media (min-width: 768px) {
@@ -90,17 +100,9 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-    }
-  
-    .navbar-links a {
-      margin: 0 20px;
-    }
-  }
 
-  .navbar-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .navbar-links a.selected {
-    font-weight: 900;
+      a {
+        margin: 0 20px;
+      }
+    }
   }
