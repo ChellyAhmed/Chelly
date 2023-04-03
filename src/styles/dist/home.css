@@ -6,12 +6,12 @@
   justify-content: center;
   align-items: center;
   /* background: linear-gradient(to bottom, #2980b9, #386388); */
-  background-color: #297fb9;
+  background-color: #f4f4f4;
   gap: 3rem;
 }
 .full-page-div p {
   font-size: 1.5rem;
-  color: #fff;
+  color: #000;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -27,14 +27,6 @@
 .section img {
   height: 12rem;
   border-radius: 50%;
-}
-
-.smile {
-  position: fixed;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 1rem;
 }
 
 /*# sourceMappingURL=home.css.map */

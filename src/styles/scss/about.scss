@@ -1,0 +1,40 @@
+@import 'variables';
+
+body {
+    background-color: $background;
+}
+
+.card {
+    background-color: $white;
+    margin: auto;
+    width: 60%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    border-left: 5px solid $primary;
+    border-radius: 5px;
+
+    //For mobile screens only:
+    @media only screen and (max-width: 767px) {
+        width: 90%;
+    }
+
+    .card-body {
+        width: fit-content;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        .date {
+            color: $primary;
+        }
+    }
+
+
+}

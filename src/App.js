@@ -6,6 +6,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
+import About from './screens/About';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home />} errorElement={<h1>Error</h1>} />
-      <Route path="/about" element={<Home />} errorElement={<h1>Error</h1>} />
+      <Route path="/about" element={<About />} errorElement={<h1>Error</h1>} />
       <Route path="/portfolio" element={<Home />} errorElement={<h1>Error</h1>} />
       <Route path="/contact" element={<Home />} errorElement={<h1>Error</h1>} />
     </Routes>

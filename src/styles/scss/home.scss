@@ -8,12 +8,12 @@
     justify-content: center;
     align-items: center;
     /* background: linear-gradient(to bottom, #2980b9, #386388); */
-    background-color: $primary;
+    background-color: $background;
     gap: 3rem;
 
     p{
         font-size: 1.5rem;
-        color: $white;
+        color: $black;
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -32,12 +32,3 @@
         border-radius: 50%;
     }
 }
-
-.smile{
-    position: fixed;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 1rem;
-}
-    

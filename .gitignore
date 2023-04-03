@@ -24,3 +24,6 @@ yarn-error.log*
 
 #Ignore the .map.css files
 *.map.css
+
+#Ignore all .ai files
+*.ai

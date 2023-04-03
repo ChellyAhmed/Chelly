@@ -24,7 +24,7 @@
 .navbar-toggle-icon,
 .navbar-toggle-icon::before,
 .navbar-toggle-icon::after {
-  background-color: #297fb9;
+  background-color: #423b6e;
   content: "";
   display: block;
   height: 2px;
@@ -65,7 +65,7 @@
   transition: all 0.2s ease-in-out;
 }
 .navbar-links a {
-  color: #297fb9;
+  color: #423b6e;
   text-decoration: none;
   margin: 10px 20px;
   font-weight: 600;

@@ -1,8 +1,9 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, createContext } from 'react';
 import '../styles/dist/navbar.css';
 import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
+
   const thisPage = useLocation().pathname.slice(1) ;
 
   const [selectedPage, setSelectedPage] = useState(thisPage);
