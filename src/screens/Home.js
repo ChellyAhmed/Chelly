@@ -6,13 +6,17 @@ import '../styles/dist/home.css';
 import Button from '../components/Button';
 import avatar from '../assets/avatar.jpg';
 import Smile from '../components/Smile';
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
+import { SelectedPageContext } from '../App';
 
 function Home() {
+    const [selectedPage, setSelectedPage] = useContext(SelectedPageContext);
+
     const navigate = useNavigate();
 
     const handleClick = () => {
+        setSelectedPage("about");
         navigate('/about');
     }
 
@@ -28,7 +32,7 @@ function Home() {
                 <div style={{ width: "100%" }}>
 
                     <div className='section'>
-                        <img src={avatar} alt='avatar' />
+                        <img src={avatar} alt={"avatar for" + selectedPage + "page"} />
                         <p>
                             Hi! <br />
                             I'm Ahmed Chelly. <br />

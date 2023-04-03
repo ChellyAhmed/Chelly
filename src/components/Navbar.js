@@ -1,14 +1,12 @@
-import React, { useState, useRef, useEffect, createContext } from 'react';
+import React, { useState, useRef, useEffect, useContext, } from 'react';
 import '../styles/dist/navbar.css';
 import { Link, useLocation } from 'react-router-dom';
+import { SelectedPageContext } from '../App';
 
 function Navbar() {
-
-  const thisPage = useLocation().pathname.slice(1) ;
-
-  const [selectedPage, setSelectedPage] = useState(thisPage);
   const [showLinks, setShowLinks] = useState(false);
   const navbarRef = useRef(null);
+  const [selectedPage, setSelectedPage] = useContext(SelectedPageContext);
 
   const handleToggle = () => {
     setShowLinks(!showLinks);
@@ -20,12 +18,14 @@ function Navbar() {
     }
   };
 
+  const thisPage = useLocation().pathname.slice(1);
   useEffect(() => {
+    setSelectedPage(thisPage);
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, []);
+  }, [setSelectedPage, thisPage]);
 
   return (
     <nav className="navbar" ref={navbarRef}>
