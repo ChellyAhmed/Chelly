@@ -29,15 +29,19 @@ function Navbar() {
 
   return (
     <nav className="navbar" ref={navbarRef}>
-      <button className="navbar-toggle" onClick={handleToggle}>
-        <span className="navbar-toggle-icon"></span>
-      </button>
+      <div className="navbar-logo"
+      style={{ display: showLinks && 'none' }}>
+        <Link to={"/"} onClick={() => { setShowLinks(false); setSelectedPage("") }} >Ahmed Chelly</Link>
+      </div>
       <div className={`navbar-links ${showLinks ? 'active' : ''}`}>
         <Link className={`${selectedPage === '' ? 'selected' : ''}`} to={"/"} onClick={() => { setShowLinks(false); setSelectedPage("") }} >Home</Link>
         <Link className={`${selectedPage === 'about' ? 'selected' : ''}`} to={"about"} onClick={() => { setShowLinks(false); setSelectedPage("about") }} >About</Link>
         <Link className={`${selectedPage === 'portfolio' ? 'selected' : ''}`} to={"portfolio"} onClick={() => { setShowLinks(false); setSelectedPage("portfolio") }} >Portfolio</Link>
         <Link className={`${selectedPage === 'contact' ? 'selected' : ''}`} to={"contact"} onClick={() => { setShowLinks(false); setSelectedPage("contact") }} >Contact</Link>
       </div>
+      <button className="navbar-toggle" onClick={handleToggle}>
+        <span className="navbar-toggle-icon"></span>
+      </button>
     </nav>
   );
 }

@@ -23,7 +23,12 @@ body {
   }
 }
 .card .card-body {
-  width: fit-content;
+  width: 40%;
+}
+@media screen and (max-width: 900px) {
+  .card .card-body {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 767px) {
   .card .card-body {
@@ -32,6 +37,7 @@ body {
 }
 .card .card-body .date {
   color: #423b6e;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=about.css.map */
