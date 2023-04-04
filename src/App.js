@@ -9,6 +9,7 @@ import {
 import About from './screens/About';
 import { createContext, useState } from 'react';
 import Portfolio from './screens/Portfolio';
+import Contact from './screens/Contact';
 
 export const SelectedPageContext = createContext();
 function App() {
@@ -22,7 +23,7 @@ function App() {
             <Route path="/" element={<Home />} errorElement={<h1>Error</h1>} />
             <Route path="/about" element={<About />} errorElement={<h1>Error</h1>} />
             <Route path="/portfolio" element={<Portfolio />} errorElement={<h1>Error</h1>} />
-            <Route path="/contact" element={<Home />} errorElement={<h1>Error</h1>} />
+            <Route path="/contact" element={<Contact />} errorElement={<h1>Error</h1>} />
           </Routes>
         </BrowserRouter>
       </SelectedPageContext.Provider>

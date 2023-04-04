@@ -11,7 +11,7 @@
     border-radius: 4px;
     font-weight: 700;
     /* add transition for both background-color and color */
-    transition: all 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
     &:hover{
         border-left: 1rem solid $primary;
         cursor: pointer;

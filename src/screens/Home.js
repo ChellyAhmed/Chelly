@@ -6,7 +6,7 @@ import '../styles/dist/home.css';
 import Button from '../components/Button';
 import avatar from '../assets/avatar.jpg';
 import Smile from '../components/Smile';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { useNavigate } from "react-router-dom";
 import { SelectedPageContext } from '../App';
 import { motion } from "framer-motion";
@@ -21,15 +21,9 @@ function Home() {
         navigate('/about');
     }
 
-
-    // To scroll to top when page is changed
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
-
     return (
         <>
-            <motion.div
+            <motion.div className='home'
                 animate={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
@@ -38,7 +32,7 @@ function Home() {
                     <div style={{ width: "100%" }}>
 
                         <div className='section'>
-                            <img src={avatar} alt={"avatar for" + selectedPage + "page"} />
+                            <img className='rounded' src={avatar} alt={"avatar for" + selectedPage + "page"} />
                             <p>
                                 Hi! <br />
                                 I'm Ahmed Chelly. <br />

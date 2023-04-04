@@ -48,13 +48,13 @@ function Portfolio() {
             </div>
             <div className="container" alt={selectedPage} >
                 <div className='project' >
-                    <a href='https://www.behance.net/gallery/160294367/Case-study-for-street-food-vendor-mobile-app' target="_blank" rel="noreferrer" >
-                        <img src={P1} alt="Case-study-for-street-food-vendor-mobile-app" />
+                    <a href='https://www.behance.net/gallery/143704277/Mobile-Application-Mockup' target="_blank" rel="noreferrer" >
+                        <img src={P2} alt="Mobile-Application-Mockup" />
                     </a>
                 </div>
                 <div className='project' >
-                    <a href='https://www.behance.net/gallery/143704277/Mobile-Application-Mockup' target="_blank" rel="noreferrer" >
-                        <img src={P2} alt="Mobile-Application-Mockup" />
+                    <a href='https://www.behance.net/gallery/160294367/Case-study-for-street-food-vendor-mobile-app' target="_blank" rel="noreferrer" >
+                        <img src={P1} alt="Case-study-for-street-food-vendor-mobile-app" />
                     </a>
                 </div>
                 <div className='project' >
