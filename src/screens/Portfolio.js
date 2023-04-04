@@ -12,6 +12,14 @@ import P5 from '../assets/projects/5.png'
 import P6 from '../assets/projects/6.png'
 import P7 from '../assets/projects/7.png'
 import P8 from '../assets/projects/8.png'
+import P1W from '../assets/projects/1.webp'
+import P2W from '../assets/projects/2.webp'
+import P3W from '../assets/projects/3.webp'
+import P4W from '../assets/projects/4.webp'
+import P5W from '../assets/projects/5.webp'
+import P6W from '../assets/projects/6.webp'
+import P7W from '../assets/projects/7.webp'
+import P8W from '../assets/projects/8.webp'
 
 
 function Portfolio() {
@@ -49,42 +57,66 @@ function Portfolio() {
             <div className="container" alt={selectedPage} >
                 <div className='project' >
                     <a href='https://www.behance.net/gallery/143704277/Mobile-Application-Mockup' target="_blank" rel="noreferrer" >
-                        <img src={P2} alt="Mobile-Application-Mockup" />
+                        <picture>
+                            <source type='image/webp' srcSet={P2W} alt="Mobile-Application-Mockup"/>
+                            <img src={P2} alt="Mobile-Application-Mockup" />
+                        </picture>
                     </a>
                 </div>
                 <div className='project' >
                     <a href='https://www.behance.net/gallery/160294367/Case-study-for-street-food-vendor-mobile-app' target="_blank" rel="noreferrer" >
-                        <img src={P1} alt="Case-study-for-street-food-vendor-mobile-app" />
+                        <picture>
+                            <source type='image/webp' srcSet={P1W} alt="Case-study-for-street-food-vendor-mobile-app"/>
+                            <img src={P1} alt="Case-study-for-street-food-vendor-mobile-app" />
+                        </picture>
                     </a>
                 </div>
                 <div className='project' >
                     <a href='https://www.behance.net/gallery/160293743/Case-study-for-graphic-designers-portfolio-website' target="_blank" rel="noreferrer" >
-                        <img src={P3} alt="Case-study-for-graphic-designers-portfolio-website" />
+                        <picture>
+                            <source type='image/webp' srcSet={P3W} alt="Case-study-for-graphic-designers-portfolio-website"/>
+                            <img src={P3} alt="Case-study-for-graphic-designers-portfolio-website" />
+                        </picture>
                     </a>
                 </div>
                 <div className='project' >
                     <a href='https://www.behance.net/gallery/160292921/Yalla-Eat-Case-study-for-a-cross-platform-service' target="_blank" rel="noreferrer" >
-                        <img src={P4} alt="Yalla-Eat-Case-study-for-a-cross-platform-service" />
+                        <picture>
+                            <source type='image/webp' srcSet={P4W} alt="Yalla-Eat-Case-study-for-a-cross-platform-service"/>
+                            <img src={P4} alt="Yalla-Eat-Case-study-for-a-cross-platform-service" />
+                        </picture>
                     </a>
                 </div>
                 <div className='project' >
                     <a href='https://www.behance.net/gallery/161814569/Landing-page-for-Camch-Website' target="_blank" rel="noreferrer" >
-                        <img src={P5} alt="Landing-page-for-Camch-Website" />
+                        <picture>
+                            <source type='image/webp' srcSet={P5W} alt="Landing-page-for-Camch-Website"/>
+                            <img src={P5} alt="Landing-page-for-Camch-Website" />
+                        </picture>
                     </a>
                 </div>
                 <div className='project' >
                     <a href='https://www.behance.net/gallery/103266977/Redesign-minimalist-for-Loup-garou-game' target="_blank" rel="noreferrer" >
-                        <img src={P6} alt="Redesign-minimalist-for-Loup-garou-game" />
+                        <picture>
+                            <source type='image/webp' srcSet={P6W} alt="Redesign-minimalist-for-Loup-garou-game"/>
+                            <img src={P6} alt="Redesign-minimalist-for-Loup-garou-game" />
+                        </picture>
                     </a>
                 </div>
                 <div className='project' >
                     <a href='https://www.behance.net/gallery/109383191/Terra-brand' target="_blank" rel="noreferrer" >
-                        <img src={P7} alt="Terra-brand" />
+                        <picture>
+                            <source type='image/webp' srcSet={P7W} alt="Terra-brand"/>
+                            <img src={P7} alt="Terra-brand" />
+                        </picture>
                     </a>
                 </div>
                 <div className='project' >
                     <a href='https://www.behance.net/gallery/120457891/Penguintn-graphical-charter' target="_blank" rel="noreferrer" >
-                        <img src={P8} alt="Penguintn-graphical-charter" />
+                        <picture>
+                            <source type='image/webp' srcSet={P8W} alt="Penguintn-graphical-charter"/>
+                            <img src={P8} alt="Penguintn-graphical-charter" />
+                        </picture>
                     </a>
                 </div>
             </div>

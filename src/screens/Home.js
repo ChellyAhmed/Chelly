@@ -5,6 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/dist/home.css';
 import Button from '../components/Button';
 import avatar from '../assets/avatar.jpg';
+import avatarW from '../assets/avatar.webp';
 import Smile from '../components/Smile';
 import { useContext } from 'react';
 import { useNavigate } from "react-router-dom";
@@ -32,7 +33,10 @@ function Home() {
                     <div style={{ width: "100%" }}>
 
                         <div className='section'>
-                            <img className='rounded' src={avatar} alt={"avatar for" + selectedPage + "page"} />
+                            <picture className='rounded'>
+                                <source type='image/webp' srcSet={avatarW} alt={"Picture of Ahmed Chelly"} />
+                                <img src={avatar} alt={"avatar of Ahmed Chelly for" + selectedPage} />
+                            </picture>
                             <p>
                                 Hi! <br />
                                 I'm Ahmed Chelly. <br />
