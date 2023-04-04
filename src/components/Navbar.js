@@ -39,7 +39,9 @@ function Navbar() {
         <Link className={`${selectedPage === 'portfolio' ? 'selected' : ''}`} to={"portfolio"} onClick={() => { setShowLinks(false); setSelectedPage("portfolio") }} >Portfolio</Link>
         <Link className={`${selectedPage === 'contact' ? 'selected' : ''}`} to={"contact"} onClick={() => { setShowLinks(false); setSelectedPage("contact") }} >Contact</Link>
       </div>
-      <button className="navbar-toggle" onClick={handleToggle}>
+      <button className="navbar-toggle" 
+      aria-label="Toggle navigation"
+      onClick={handleToggle}>
         <span className="navbar-toggle-icon"></span>
       </button>
     </nav>

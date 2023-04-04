@@ -80,6 +80,7 @@ function About() {
                 clicked={handleClick}
                 />
             </div>
+            <br/>
         </motion.div>
 
     );

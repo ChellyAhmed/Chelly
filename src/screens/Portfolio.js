@@ -48,43 +48,43 @@ function Portfolio() {
             </div>
             <div className="container" alt={selectedPage} >
                 <div className='project' >
-                    <a href='#' target="_blank" rel="noreferrer" >
-                        <img src={P1} alt="project" />
+                    <a href='https://www.behance.net/gallery/160294367/Case-study-for-street-food-vendor-mobile-app' target="_blank" rel="noreferrer" >
+                        <img src={P1} alt="Case-study-for-street-food-vendor-mobile-app" />
                     </a>
                 </div>
                 <div className='project' >
-                    <a href='#' target="_blank" rel="noreferrer" >
-                        <img src={P2} alt="project" />
+                    <a href='https://www.behance.net/gallery/143704277/Mobile-Application-Mockup' target="_blank" rel="noreferrer" >
+                        <img src={P2} alt="Mobile-Application-Mockup" />
                     </a>
                 </div>
                 <div className='project' >
-                    <a href='#' target="_blank" rel="noreferrer" >
-                        <img src={P3} alt="project" />
+                    <a href='https://www.behance.net/gallery/160293743/Case-study-for-graphic-designers-portfolio-website' target="_blank" rel="noreferrer" >
+                        <img src={P3} alt="Case-study-for-graphic-designers-portfolio-website" />
                     </a>
                 </div>
                 <div className='project' >
-                    <a href='#' target="_blank" rel="noreferrer" >
-                        <img src={P4} alt="project" />
+                    <a href='https://www.behance.net/gallery/160292921/Yalla-Eat-Case-study-for-a-cross-platform-service' target="_blank" rel="noreferrer" >
+                        <img src={P4} alt="Yalla-Eat-Case-study-for-a-cross-platform-service" />
                     </a>
                 </div>
                 <div className='project' >
-                    <a href='#' target="_blank" rel="noreferrer" >
-                        <img src={P5} alt="project" />
+                    <a href='https://www.behance.net/gallery/161814569/Landing-page-for-Camch-Website' target="_blank" rel="noreferrer" >
+                        <img src={P5} alt="Landing-page-for-Camch-Website" />
                     </a>
                 </div>
                 <div className='project' >
-                    <a href='#' target="_blank" rel="noreferrer" >
-                        <img src={P6} alt="project" />
+                    <a href='https://www.behance.net/gallery/103266977/Redesign-minimalist-for-Loup-garou-game' target="_blank" rel="noreferrer" >
+                        <img src={P6} alt="Redesign-minimalist-for-Loup-garou-game" />
                     </a>
                 </div>
                 <div className='project' >
-                    <a href='#' target="_blank" rel="noreferrer" >
-                        <img src={P7} alt="project" />
+                    <a href='https://www.behance.net/gallery/109383191/Terra-brand' target="_blank" rel="noreferrer" >
+                        <img src={P7} alt="Terra-brand" />
                     </a>
                 </div>
                 <div className='project' >
-                    <a href='#' target="_blank" rel="noreferrer" >
-                        <img src={P8} alt="project" />
+                    <a href='https://www.behance.net/gallery/120457891/Penguintn-graphical-charter' target="_blank" rel="noreferrer" >
+                        <img src={P8} alt="Penguintn-graphical-charter" />
                     </a>
                 </div>
             </div>
@@ -94,6 +94,8 @@ function Portfolio() {
                     clicked={handleClick}
                 />
             </div>
+
+            <br />
         </motion.div>
 
     );

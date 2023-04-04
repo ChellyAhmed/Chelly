@@ -27,6 +27,7 @@
 .section img {
   height: 12rem;
   border-radius: 50%;
+  width: auto;
 }
 
 /*# sourceMappingURL=home.css.map */
