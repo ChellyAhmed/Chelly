@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Button from '../components/Button.js';
 import '../styles/dist/about.css';
+import { motion } from "framer-motion";
 
 function About() {
     // To scroll to top when page is changed
@@ -9,7 +10,12 @@ function About() {
     }, [])
 
     return (
-        <>
+        <motion.div
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+        >
+
             <br />
             <br />
             <br />
@@ -62,7 +68,8 @@ function About() {
             <div style={{ width: "100%", textAlign: "center" }}>
                 <Button text={"Check out my work"} />
             </div>
-        </>
+        </motion.div>
+
     );
 }
 
