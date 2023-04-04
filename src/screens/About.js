@@ -1,13 +1,23 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import Button from '../components/Button.js';
 import '../styles/dist/about.css';
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { SelectedPageContext } from "../App.js";
 
 function About() {
+    const [selectedPage, setSelectedPage] = useContext(SelectedPageContext);
+    const navigate = useNavigate();
+
     // To scroll to top when page is changed
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+
+    const handleClick = () => {
+        setSelectedPage("portfolio");
+        navigate('/portfolio');
+    }
 
     return (
         <motion.div
@@ -23,7 +33,7 @@ function About() {
 
             <div className="card" >
                 <h1>Education:</h1>
-                <div className="card-body">
+                <div className="card-body" alt={selectedPage}>
                     <p>
                         <b>Mediterranean Institute of Technology</b> <br />
                         <small>Excellence Scholarship <br /></small>
@@ -66,7 +76,9 @@ function About() {
             <br />
 
             <div style={{ width: "100%", textAlign: "center" }}>
-                <Button text={"Check out my work"} />
+                <Button text={"Check out my work"} 
+                clicked={handleClick}
+                />
             </div>
         </motion.div>
 

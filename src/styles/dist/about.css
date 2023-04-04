@@ -3,7 +3,6 @@ body {
 }
 
 .card {
-  background-color: #fff;
   margin: auto;
   width: 60%;
   padding-top: 0.5%;
@@ -14,9 +13,10 @@ body {
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
+  background-color: #fff;
   border-left: 5px solid #423b6e;
   border-radius: 5px;
-  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.09);
 }
 @media only screen and (max-width: 767px) {
   .card {

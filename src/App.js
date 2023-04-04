@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import About from './screens/About';
 import { createContext, useState } from 'react';
+import Portfolio from './screens/Portfolio';
 
 export const SelectedPageContext = createContext();
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} errorElement={<h1>Error</h1>} />
             <Route path="/about" element={<About />} errorElement={<h1>Error</h1>} />
-            <Route path="/portfolio" element={<Home />} errorElement={<h1>Error</h1>} />
+            <Route path="/portfolio" element={<Portfolio />} errorElement={<h1>Error</h1>} />
             <Route path="/contact" element={<Home />} errorElement={<h1>Error</h1>} />
           </Routes>
         </BrowserRouter>

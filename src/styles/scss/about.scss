@@ -6,7 +6,6 @@ body {
 }
 
 .card {
-    background-color: $white;
     margin: auto;
     width: 60%;
     padding-top: 0.5%;
@@ -17,8 +16,8 @@ body {
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    border-left: 5px solid $primary;
-    border-radius: 5px;
+    //Card from mixins
+    @include card;
     //Shadow from mixins
     @include shadow;
     

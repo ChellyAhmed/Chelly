@@ -1,4 +1,10 @@
 @mixin shadow {
-    //Shadow with x= 0 y=0 blur= 30px spread= 1px color= $black with 0.1 opacity 
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+    //Shadow with x= 0 y=0 blur= 30px spread= 1px color= $black with 0.09 opacity 
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.09);
+}
+
+@mixin card {
+    background-color: $white;
+    border-left: 5px solid $primary;
+    border-radius: 5px;
 }
