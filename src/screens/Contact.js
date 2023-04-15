@@ -25,11 +25,11 @@ function Contact() {
                                 Don't be shy, and contact me right now!<br />
                                 <div className='contact-details'>
                                     <p>
-                                        <i className="bi bi-telephone-fill" style={{ marginRight: "1rem" }} />
+                                        <i className="bi bi-envelope-at-fill" style={{ marginRight: "1rem" }} />
                                         <a href="mailto:ahmed.chelly@medtech.tn" target="_blank" rel="noreferrer">
                                             ahmed.chelly@medtech.tn <br />
                                         </a>
-                                        <i className="bi bi-envelope-at-fill" style={{ marginRight: "1rem" }} />
+                                        <i className="bi bi-telephone-fill" style={{ marginRight: "1rem" }} />
                                         <a href="tel:+21697556892" target="_blank" rel="noreferrer">
                                             +216 97 556 892
                                         </a>
