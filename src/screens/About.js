@@ -56,6 +56,11 @@ function About() {
                 <h1>Relevant Experience:</h1>
                 <div className="card-body">
                     <p>
+                        <span className="date" >May 2023 - August 2023</span> <br />
+                        <b>Research Intern</b> <br />
+                        <i>Mediterranean Institute of Technology</i> <br />
+                    </p>
+                    <p>
                         <span className="date" >2021 - 2022</span> <br />
                         <b>Graphic Designer</b> <br />
                         <i>Birou Suite</i> <br />
