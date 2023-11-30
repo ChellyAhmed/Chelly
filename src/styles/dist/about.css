@@ -41,4 +41,24 @@ body {
   font-weight: 700;
 }
 
+.centered-buttons {
+  display: "flex";
+  text-align: center;
+}
+.centered-buttons > * {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+@media screen and (max-width: 767px) {
+  .centered-buttons {
+    width: 100%;
+  }
+  .centered-buttons > * {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
 /*# sourceMappingURL=about.css.map */

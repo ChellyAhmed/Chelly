@@ -20,7 +20,7 @@ body {
     @include card;
     //Shadow from mixins
     @include shadow;
-    
+
     //For mobile screens only:
     @media only screen and (max-width: 767px) {
         width: 90%;
@@ -42,4 +42,24 @@ body {
             font-weight: 700;
         }
     }
+}
+
+.centered-buttons {
+    display:"flex"; 
+    text-align: center;
+    // all children elements will have a margin: 
+    & > * {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        & > * {
+            margin-right: 0.5rem;
+            margin-left: 0.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
 }

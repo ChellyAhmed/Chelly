@@ -18,8 +18,8 @@ function Home() {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        setSelectedPage("portfolio");
-        navigate('/portfolio');
+        setSelectedPage("about");
+        navigate('/about');
     }
 
     return (
@@ -44,7 +44,7 @@ function Home() {
                             </p>
                         </div>
                         <div style={{ width: "100%", textAlign: "center" }}>
-                            <Button text={"Check out my work"}
+                            <Button text={"More about me"}
                                 clicked={handleClick}
                             />
                         </div>

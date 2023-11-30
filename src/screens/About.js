@@ -4,6 +4,7 @@ import '../styles/dist/about.css';
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { SelectedPageContext } from "../App.js";
+import Ahmed_Chelly_Resume from '../assets/Ahmed_Chelly_Resume.pdf';
 
 function About() {
     const [selectedPage, setSelectedPage] = useContext(SelectedPageContext);
@@ -17,6 +18,14 @@ function About() {
     const handleClick = () => {
         setSelectedPage("portfolio");
         navigate('/portfolio');
+    }
+
+    const downloadResume = () => {
+        // window.open(Ahmed_Chelly_Resume, "_blank");
+        const link = document.createElement('a');
+        link.href = Ahmed_Chelly_Resume;
+        link.download = 'Ahmed_Chelly_Resume.pdf';
+        link.click();
     }
 
     return (
@@ -80,12 +89,15 @@ function About() {
 
             <br />
 
-            <div style={{ width: "100%", textAlign: "center" }}>
-                <Button text={"Check out my work"} 
-                clicked={handleClick}
+            <div className="centered-buttons">
+                <Button text={"Download my Resume"}
+                    clicked={downloadResume}
+                />
+                <Button text={"Check out my work"}
+                    clicked={handleClick}
                 />
             </div>
-            <br/>
+            <br />
         </motion.div>
 
     );
