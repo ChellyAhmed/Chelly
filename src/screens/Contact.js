@@ -21,8 +21,8 @@ function Contact() {
                         <div className='section'>
                             <img src={avatar} alt={"Smiley face"} />
                             <p>
-                                Hi again! <br />
-                                Don't be shy, and contact me right now!<br />
+                                Connect with me! <br />
+                                I will be humbled to receive a message from you!<br />
                                 <div className='contact-details'>
                                     <p>
                                         <i className="bi bi-envelope-at-fill" style={{ marginRight: "1rem" }} />
