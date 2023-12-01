@@ -22,7 +22,7 @@ function Contact() {
                             <img src={avatar} alt={"Smiley face"} />
                             <p>
                                 Connect with me! <br />
-                                I will be humbled to receive a message from you!<br />
+                                You can reach me at:<br />
                                 <div className='contact-details'>
                                     <p>
                                         <i className="bi bi-envelope-at-fill" style={{ marginRight: "1rem" }} />
