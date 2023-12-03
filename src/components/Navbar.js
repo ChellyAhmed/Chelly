@@ -2,10 +2,15 @@ import React, { useState, useRef, useEffect, useContext, } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { SelectedPageContext } from '../App';
 
-function Navbar() {
+function Navbar({ toggleTheme, theme }) {
   const [showLinks, setShowLinks] = useState(false);
   const navbarRef = useRef(null);
   const [selectedPage, setSelectedPage] = useContext(SelectedPageContext);
+
+  const handleToggleTheme = () => {
+    toggleTheme();
+    console.log("toggle theme");
+  }
 
   const handleToggle = () => {
     setShowLinks(!showLinks);
@@ -29,7 +34,7 @@ function Navbar() {
   return (
     <nav className="navbar" ref={navbarRef}>
       <div className="navbar-logo"
-      style={{ display: showLinks && 'none' }}>
+        style={{ display: showLinks && 'none' }}>
         <Link to={"/"} onClick={() => { setShowLinks(false); setSelectedPage("") }} >Ahmed Chelly</Link>
       </div>
       <div className={`navbar-links ${showLinks ? 'active' : ''}`}>
@@ -38,11 +43,19 @@ function Navbar() {
         <Link className={`${selectedPage === 'portfolio' ? 'selected' : ''}`} to={"portfolio"} onClick={() => { setShowLinks(false); setSelectedPage("portfolio") }} >Portfolio</Link>
         <Link className={`${selectedPage === 'contact' ? 'selected' : ''}`} to={"contact"} onClick={() => { setShowLinks(false); setSelectedPage("contact") }} >Contact</Link>
       </div>
-      <button className="navbar-toggle" 
-      aria-label="Toggle navigation"
-      onClick={handleToggle}>
-        <span className="navbar-toggle-icon"></span>
-      </button>
+      <div className="navbar-end-section">
+        {
+          theme === 'dark' ?
+            <i className="bi bi-brightness-high-fill" onClick={handleToggleTheme}></i>
+            :
+            <i className="bi bi-moon" onClick={handleToggleTheme}></i>
+        }
+        <button className="navbar-toggle"
+          aria-label="Toggle navigation"
+          onClick={handleToggle}>
+          <span className="navbar-toggle-icon"></span>
+        </button>
+      </div>
     </nav>
   );
 }

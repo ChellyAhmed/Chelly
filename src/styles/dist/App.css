@@ -1,10 +1,11 @@
 /* Error: Undefined variable.
  *   ,
- * 2 |     background-color: $background;
- *   |                       ^^^^^^^^^^^
+ * 7 |     background-color: $white;
+ *   |                       ^^^^^^
  *   '
- *   src/styles/scss/about.scss 2:23  @import
- *   src/styles/scss/App.scss 13:9    root stylesheet */
+ *   src/styles/scss/mixins.scss 7:23  card()
+ *   src/styles/scss/about.scss 13:5   @import
+ *   src/styles/scss/app.scss 9:9      root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      background-color: $background;\a   \2502                        ^^^^^^^^^^^\a   \2575 \a   src/styles/scss/about.scss 2:23  @import\a   src/styles/scss/App.scss 13:9    root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 7 \2502      background-color: $white;\a   \2502                        ^^^^^^\a   \2575 \a   src/styles/scss/mixins.scss 7:23  card()\a   src/styles/scss/about.scss 13:5   @import\a   src/styles/scss/app.scss 9:9      root stylesheet";
 }

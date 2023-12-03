@@ -1,0 +1,13 @@
+@import 'dark-variables';
+
+.dark-theme {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: $background;
+    color: $black;
+
+    @import 'app';
+}
