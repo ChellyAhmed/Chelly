@@ -8,6 +8,8 @@
     min-height: 100vh;
     background-color: $background;
     color: $black;
+    //add transition for backgrouond color only
+    transition: background-color 0.3s ease-in-out;
 
     @import 'app';
 }
