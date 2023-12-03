@@ -40,7 +40,7 @@ function Home() {
                             <p>
                                 Hi! <br />
                                 I'm Ahmed Chelly. <br />
-                                I'm a software engineer and a UX designer.
+                                I'm a passionate software engineering student.
                             </p>
                         </div>
                         <div style={{ width: "100%", textAlign: "center" }}>

@@ -4,23 +4,17 @@ import '../styles/dist/portfolio.css';
 import { motion } from "framer-motion";
 import { SelectedPageContext } from '../App';
 import { useNavigate } from 'react-router-dom';
+import { Project, TextProject } from '../components/Project.js';
 import P1 from '../assets/projects/1.png'
 import P2 from '../assets/projects/2.png'
 import P3 from '../assets/projects/3.png'
 import P4 from '../assets/projects/4.png'
 import P5 from '../assets/projects/5.png'
-import P6 from '../assets/projects/6.png'
-import P7 from '../assets/projects/7.png'
-import P8 from '../assets/projects/8.png'
 import P1W from '../assets/projects/1.webp'
 import P2W from '../assets/projects/2.webp'
 import P3W from '../assets/projects/3.webp'
 import P4W from '../assets/projects/4.webp'
 import P5W from '../assets/projects/5.webp'
-import P6W from '../assets/projects/6.webp'
-import P7W from '../assets/projects/7.webp'
-import P8W from '../assets/projects/8.webp'
-
 
 function Portfolio() {
 
@@ -50,75 +44,72 @@ function Portfolio() {
             <br />
             <br />
 
-            <div style={{ width: "78%", margin: "auto" }} >
-                <h1>My projects</h1>
+            <div className='portfolio-div' >
+                <h1>Coding Projects</h1>
+                <p>Most of these projects are created within a team. Click on one to open the Github repository.</p>
+            </div>
+            <div className="container" alt={selectedPage} >
+                <TextProject
+                    title={"My personal website"}
+                    link={"https://github.com/ChellyAhmed/Chelly"}
+                    description={"The website you are currently viewing, created using ReactJs."}
+                />
+                <TextProject
+                    title={"Roommie"}
+                    link={"https://github.com/ChellyAhmed/roommie"}
+                    description={"A roommate matching platform created using ReactJs, an ExpressJs server, and a SQL Database."}
+                />
+                <TextProject
+                    title={"QuizGame"}
+                    link={"https://github.com/ChellyAhmed/Chelly"}
+                    description={"A console-based quiz game that can be console-based quiz game that can be played between multiple hosts connected via sockets, created with Python."}
+                />
+            </div>
+            <div className='portfolio-div'>
+                <span>
+                    More projects in my <a href="https://github.com/ChellyAhmed " target="_blank" rel="noreferrer">Github Profile</a>
+                </span>
+            </div>
+            <div className='portfolio-div' >
+                <h1>UI/UX Design Projects</h1>
                 <p>Click on a project and it will open in a new tab!</p>
             </div>
             <div className="container" alt={selectedPage} >
-                <div className='project' >
-                    <a href='https://www.behance.net/gallery/143704277/Mobile-Application-Mockup' target="_blank" rel="noreferrer" >
-                        <picture>
-                            <source type='image/webp' srcSet={P2W} alt="Mobile-Application-Mockup"/>
-                            <img src={P2} alt="Mobile-Application-Mockup" />
-                        </picture>
-                    </a>
-                </div>
-                <div className='project' >
-                    <a href='https://www.behance.net/gallery/160294367/Case-study-for-street-food-vendor-mobile-app' target="_blank" rel="noreferrer" >
-                        <picture>
-                            <source type='image/webp' srcSet={P1W} alt="Case-study-for-street-food-vendor-mobile-app"/>
-                            <img src={P1} alt="Case-study-for-street-food-vendor-mobile-app" />
-                        </picture>
-                    </a>
-                </div>
-                <div className='project' >
-                    <a href='https://www.behance.net/gallery/160293743/Case-study-for-graphic-designers-portfolio-website' target="_blank" rel="noreferrer" >
-                        <picture>
-                            <source type='image/webp' srcSet={P3W} alt="Case-study-for-graphic-designers-portfolio-website"/>
-                            <img src={P3} alt="Case-study-for-graphic-designers-portfolio-website" />
-                        </picture>
-                    </a>
-                </div>
-                <div className='project' >
-                    <a href='https://www.behance.net/gallery/160292921/Yalla-Eat-Case-study-for-a-cross-platform-service' target="_blank" rel="noreferrer" >
-                        <picture>
-                            <source type='image/webp' srcSet={P4W} alt="Yalla-Eat-Case-study-for-a-cross-platform-service"/>
-                            <img src={P4} alt="Yalla-Eat-Case-study-for-a-cross-platform-service" />
-                        </picture>
-                    </a>
-                </div>
-                <div className='project' >
-                    <a href='https://www.behance.net/gallery/161814569/Landing-page-for-Camch-Website' target="_blank" rel="noreferrer" >
-                        <picture>
-                            <source type='image/webp' srcSet={P5W} alt="Landing-page-for-Camch-Website"/>
-                            <img src={P5} alt="Landing-page-for-Camch-Website" />
-                        </picture>
-                    </a>
-                </div>
-                <div className='project' >
-                    <a href='https://www.behance.net/gallery/103266977/Redesign-minimalist-for-Loup-garou-game' target="_blank" rel="noreferrer" >
-                        <picture>
-                            <source type='image/webp' srcSet={P6W} alt="Redesign-minimalist-for-Loup-garou-game"/>
-                            <img src={P6} alt="Redesign-minimalist-for-Loup-garou-game" />
-                        </picture>
-                    </a>
-                </div>
-                <div className='project' >
-                    <a href='https://www.behance.net/gallery/109383191/Terra-brand' target="_blank" rel="noreferrer" >
-                        <picture>
-                            <source type='image/webp' srcSet={P7W} alt="Terra-brand"/>
-                            <img src={P7} alt="Terra-brand" />
-                        </picture>
-                    </a>
-                </div>
-                <div className='project' >
-                    <a href='https://www.behance.net/gallery/120457891/Penguintn-graphical-charter' target="_blank" rel="noreferrer" >
-                        <picture>
-                            <source type='image/webp' srcSet={P8W} alt="Penguintn-graphical-charter"/>
-                            <img src={P8} alt="Penguintn-graphical-charter" />
-                        </picture>
-                    </a>
-                </div>
+                <Project
+                    link='https://www.behance.net/gallery/143704277/Mobile-Application-Mockup'
+                    image={P2}
+                    image_webp={P2W}
+                    title="Mobile Application Mockup"
+                />
+                <Project
+                    link='https://www.behance.net/gallery/160294367/Case-study-for-street-food-vendor-mobile-app'
+                    image={P1}
+                    image_webp={P1W}
+                    title="Case study for street food vendor mobile app"
+                />
+                <Project
+                    link='https://www.behance.net/gallery/160293743/Case-study-for-graphic-designers-portfolio-website'
+                    image={P3}
+                    image_webp={P3W}
+                    title="Case study for graphic designers portfolio website"
+                />
+                <Project
+                    link='https://www.behance.net/gallery/160292921/Yalla-Eat-Case-study-for-a-cross-platform-service'
+                    image={P4}
+                    image_webp={P4W}
+                    title="Yalla Eat Case study for a cross-platform service"
+                />
+                <Project
+                    link='https://www.behance.net/gallery/161814569/Landing-page-for-Camch-Website'
+                    image={P5}
+                    image_webp={P5W}
+                    title="Landing page for Camch Website"
+                />
+            </div>
+            <div className='portfolio-div'>
+                <span>
+                    More projects in my <a href="https://www.behance.net/ahmedchelly " target="_blank" rel="noreferrer">Behance Profile</a>
+                </span>
             </div>
 
             <div style={{ width: "100%", textAlign: "center" }}>

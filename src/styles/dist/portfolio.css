@@ -2,6 +2,25 @@ body {
   background-color: #f4f4f4;
 }
 
+.portfolio-div {
+  width: 78%;
+  margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .portfolio-div {
+    width: 95%;
+  }
+}
+.portfolio-div a {
+  text-decoration: none;
+  color: #386388;
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+}
+.portfolio-div a:hover {
+  color: #423b6e;
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -48,6 +67,55 @@ body {
 }
 @media screen and (max-width: 767px) {
   .container .project {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.container .text-project {
+  background-color: #fff;
+  border-left: 5px solid #423b6e;
+  border-radius: 5px;
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.09);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  padding: 0.7rem;
+}
+.container .text-project h3 {
+  margin: 0;
+  display: block;
+}
+.container .text-project:hover {
+  border-left: 25px solid #423b6e;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.container .text-project p {
+  height: inherit;
+}
+.container .text-project a {
+  text-decoration: none;
+  color: #386388;
+  transition: all 0.3s ease-in-out;
+  font-size: small;
+  font-weight: 700;
+  margin-left: auto;
+}
+.container .text-project a:hover {
+  color: #423b6e;
+}
+@media screen and (max-width: 1000px) {
+  .container .text-project {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container .text-project {
     width: 100%;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
