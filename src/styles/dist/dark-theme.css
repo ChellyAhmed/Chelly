@@ -341,6 +341,11 @@
   margin-right: 1rem;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .dark-theme .navbar-end-section i {
+    height: 1.2rem;
+  }
+}
 .dark-theme .navbar-toggle {
   background-color: transparent;
   border: none;

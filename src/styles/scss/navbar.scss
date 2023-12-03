@@ -30,9 +30,10 @@
     font-size: 1.2rem;
     margin-right: 1rem;
     cursor: pointer;
-  
+    @media screen and (max-width: 768px) {
+      height: 1.2rem;
+    }
   }
-
 }
 
 .navbar-toggle {

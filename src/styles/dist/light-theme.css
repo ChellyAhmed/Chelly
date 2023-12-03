@@ -341,6 +341,11 @@
   margin-right: 1rem;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .light-theme .navbar-end-section i {
+    height: 1.2rem;
+  }
+}
 .light-theme .navbar-toggle {
   background-color: transparent;
   border: none;
