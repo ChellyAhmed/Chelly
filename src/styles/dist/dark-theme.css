@@ -201,6 +201,7 @@
   align-items: center;
   /* background: linear-gradient(to bottom, #2980b9, #386388); */
   background-color: #333;
+  transition: all 0.3s ease-in-out;
   gap: 3rem;
 }
 .dark-theme .contact .full-page-div p {
@@ -246,6 +247,7 @@
   align-items: center;
   /* background: linear-gradient(to bottom, #2980b9, #386388); */
   background-color: #333;
+  transition: all 0.3s ease-in-out;
   gap: 3rem;
 }
 .dark-theme .home .full-page-div p {
