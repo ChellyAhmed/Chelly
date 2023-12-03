@@ -12,7 +12,7 @@
   transition: all 0.2s ease-in-out;
 }
 .navbar .navbar-logo a {
-  color: #423b6e;
+  color: #386388;
   text-decoration: none;
   margin: 10px 20px;
   font-weight: 600;
@@ -32,7 +32,7 @@
 .navbar-toggle-icon,
 .navbar-toggle-icon::before,
 .navbar-toggle-icon::after {
-  background-color: #423b6e;
+  background-color: #386388;
   content: "";
   display: block;
   height: 2px;
@@ -74,7 +74,7 @@
   transition: all 0.2s ease-in-out;
 }
 .navbar-links a {
-  color: #423b6e;
+  color: #386388;
   text-decoration: none;
   margin: 10px 20px;
   font-weight: 600;

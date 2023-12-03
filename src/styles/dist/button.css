@@ -1,7 +1,8 @@
 .button {
   background-color: #fff;
-  border-left: 5px solid #423b6e;
+  border-left: 5px solid #386388;
   border-radius: 5px;
+  color: #000;
   border-right: none;
   border-top: none;
   border-bottom: none;
@@ -14,7 +15,7 @@
   box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.09);
 }
 .button:hover {
-  border-left: 1rem solid #423b6e;
+  border-left: 1rem solid #386388;
   cursor: pointer;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }

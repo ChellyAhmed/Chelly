@@ -3,6 +3,7 @@
 
 body {
     background-color: $background;
+    color: $black;
 }
 
 .portfolio-div {
@@ -14,12 +15,12 @@ body {
 
     a {
         text-decoration: none;
-        color: $secondary;
+        color: $primary;
         transition: all 0.3s ease-in-out;
         font-weight: 700;
 
         &:hover {
-            color: $primary;
+            text-decoration: underline;
         }
     }
 
@@ -107,16 +108,15 @@ body {
 
         a {
             text-decoration: none;
-            color: $secondary;
+            color: $primary;
             transition: all 0.3s ease-in-out;
             font-size: small;
             font-weight: 700;
             //Make it always at the right of the parent: 
             margin-left: auto;
             
-            
             &:hover {
-                color: $primary;
+                text-decoration: underline;
             }
         }
 
