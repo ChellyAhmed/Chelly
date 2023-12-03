@@ -62,7 +62,7 @@ function Portfolio() {
                 <TextProject
                     title={"QuizGame"}
                     link={"https://github.com/ChellyAhmed/Chelly"}
-                    description={"A console-based quiz game that can be console-based quiz game that can be played between multiple hosts connected via sockets, created with Python."}
+                    description={"A console-based quiz game that can be played between multiple hosts connected via sockets, created with Python."}
                 />
             </div>
             <div className='portfolio-div'>
