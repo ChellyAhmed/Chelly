@@ -1,7 +1,6 @@
 import IconsBar from '../components/IconsBar';
 //import bootstrap icons:
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import '../styles/dist/contact.css';
 import avatar from '../assets/smile.svg';
 import Smile from '../components/Smile';
 import { motion } from "framer-motion";

@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/dist/light-app.css';
 import Navbar from './components/Navbar';
 import Home from './screens/Home';
 import {

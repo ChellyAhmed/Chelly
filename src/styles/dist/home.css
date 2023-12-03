@@ -1,32 +1,17 @@
-.home .full-page-div {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* background: linear-gradient(to bottom, #2980b9, #386388); */
-  background-color: #f4f4f4;
-  gap: 3rem;
-}
-.home .full-page-div p {
-  font-size: 1.5rem;
-  color: #000;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-.home .section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.home .section img {
-  height: 12rem;
-  border-radius: 50%;
-  width: auto;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 11 |         background-color: $background;
+ *    |                           ^^^^^^^^^^^
+ *    '
+ *   src/styles/scss/home.scss 11:27  root stylesheet */
 
-/*# sourceMappingURL=home.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 11 \2502          background-color: $background;\a    \2502                            ^^^^^^^^^^^\a    \2575 \a   src/styles/scss/home.scss 11:27  root stylesheet";
+}

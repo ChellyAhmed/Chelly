@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect, useContext, } from 'react';
-import '../styles/dist/navbar.css';
 import { Link, useLocation } from 'react-router-dom';
 import { SelectedPageContext } from '../App';
 

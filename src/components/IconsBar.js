@@ -1,4 +1,3 @@
-import '../styles/dist/iconsBar.css'
 
 function IconsBar() {
     return (

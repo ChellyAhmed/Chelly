@@ -1,28 +1,17 @@
-.button {
-  background-color: #fff;
-  border-left: 5px solid #386388;
-  border-radius: 5px;
-  color: #000;
-  border-right: none;
-  border-top: none;
-  border-bottom: none;
-  font-size: 1.1rem;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-weight: 700;
-  /* add transition for both background-color and color */
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.09);
-}
-.button:hover {
-  border-left: 1rem solid #386388;
-  cursor: pointer;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-}
-@media screen and (max-width: 768px) {
-  .button {
-    height: 3rem;
-  }
-}
+/* Error: Undefined mixin.
+ *   ,
+ * 2 |     @include card;
+ *   |     ^^^^^^^^^^^^^
+ *   '
+ *   src/styles/scss/button.scss 2:5  root stylesheet */
 
-/*# sourceMappingURL=button.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 2 \2502      @include card;\a   \2502      ^^^^^^^^^^^^^\a   \2575 \a   src/styles/scss/button.scss 2:5  root stylesheet";
+}

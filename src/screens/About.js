@@ -1,6 +1,5 @@
 import { useContext, useEffect } from "react";
 import Button from '../components/Button.js';
-import '../styles/dist/about.css';
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { SelectedPageContext } from "../App.js";
