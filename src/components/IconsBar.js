@@ -11,7 +11,7 @@ function IconsBar() {
             <a href="https://github.com/ChellyAhmed" target="_blank" rel="noreferrer" aria-label="github">
                 <i className="bi bi-github" />
             </a>
-            <a href="https://wa.me/(+216)97556892" target="_blank" rel="noreferrer" aria-label="whatsapp">
+            <a href="https://wa.me/+21697556892" target="_blank" rel="noreferrer" aria-label="whatsapp">
                 <i className="bi bi-whatsapp" />
             </a>
             <a href="mailto:ahmed.chelly@medtech.tn" target="_blank" rel="noreferrer" aria-label="envelope">
