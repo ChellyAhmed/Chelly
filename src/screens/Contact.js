@@ -29,8 +29,8 @@ function Contact() {
                                             ahmed.chelly@medtech.tn <br />
                                         </a>
                                         <i className="bi bi-telephone-fill" style={{ marginRight: "1rem" }} />
-                                        <a href="tel:+21697556892" target="_blank" rel="noreferrer">
-                                            +216 97 556 892
+                                        <a href="tel:(+216)97556892" target="_blank" rel="noreferrer">
+                                            (+216) 97 556 892
                                         </a>
                                     </p>
                                 </div>

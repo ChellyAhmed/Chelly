@@ -27,3 +27,6 @@ yarn-error.log*
 
 #Ignore all .ai files
 *.ai
+
+#Ignore TODO.md
+TODO.md

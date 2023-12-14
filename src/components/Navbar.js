@@ -46,7 +46,7 @@ function Navbar({ toggleTheme, theme }) {
       <div className="navbar-end-section">
         {
           theme === 'dark' ?
-            <i className="bi bi-brightness-high-fill" onClick={handleToggleTheme}></i>
+            <i className="bi bi-brightness-high" onClick={handleToggleTheme}></i>
             :
             <i className="bi bi-moon" onClick={handleToggleTheme}></i>
         }

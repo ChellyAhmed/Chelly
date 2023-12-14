@@ -2,14 +2,14 @@
     font-family: 'Raleway', sans-serif;
 }
 
-@import 'mixins';
+@import 'mixins/mixins';
 
-@import 'about';
-@import 'portfolio';
-@import 'contact';
-@import 'home';
+@import 'pages/about';
+@import 'pages/portfolio';
+@import 'pages/contact';
+@import 'pages/home';
 
-@import 'button';
-@import 'iconsBar';
-@import 'navbar';
-@import 'smile';
+@import 'components/button';
+@import 'components/iconsBar';
+@import 'components/navbar';
+@import 'components/smile';

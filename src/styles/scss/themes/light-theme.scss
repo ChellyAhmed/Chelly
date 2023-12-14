@@ -1,6 +1,6 @@
-@import 'dark-variables';
+@import '../variables/light-variables.scss';
 
-.dark-theme {
+.light-theme {
     display: block;
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +11,5 @@
     //add transition for backgrouond color only
     transition: background-color 0.3s ease-in-out;
 
-
-    @import 'app';
+    @import '../app.scss';
 }

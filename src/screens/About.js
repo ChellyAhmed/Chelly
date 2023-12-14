@@ -61,7 +61,7 @@ function About() {
             <br />
 
             <div className="card" >
-                <h1>Relevant Experience:</h1>
+                <h1>Experience:</h1>
                 <div className="card-body">
                     <p>
                         <span className="date" >May 2023 - August 2023</span> <br />
