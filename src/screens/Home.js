@@ -10,9 +10,18 @@ import { useContext } from 'react';
 import { useNavigate } from "react-router-dom";
 import { SelectedPageContext } from '../App';
 import { motion } from "framer-motion";
+import Ahmed_Chelly_Resume from '../assets/Ahmed_Chelly_Resume.pdf';
 
 function Home() {
     const [selectedPage, setSelectedPage] = useContext(SelectedPageContext);
+
+    const downloadResume = () => {
+        // window.open(Ahmed_Chelly_Resume, "_blank");
+        const link = document.createElement('a');
+        link.href = Ahmed_Chelly_Resume;
+        link.download = 'Ahmed_Chelly_Resume.pdf';
+        link.click();
+    }
 
     const navigate = useNavigate();
 
@@ -42,9 +51,12 @@ function Home() {
                                 I'm a passionate software engineering student.
                             </p>
                         </div>
-                        <div style={{ width: "100%", textAlign: "center" }}>
+                        <div className="centered-buttons">
                             <Button text={"More about me"}
                                 clicked={handleClick}
+                            />
+                            <Button text={"Download my Resume"}
+                                clicked={downloadResume}
                             />
                         </div>
                     </div>
