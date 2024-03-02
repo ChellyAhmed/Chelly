@@ -20,6 +20,29 @@ function Portfolio() {
     const [selectedPage, setSelectedPage] = useContext(SelectedPageContext);
     const navigate = useNavigate();
 
+    const textProjects = [
+        {
+            title: "My personal website",
+            link: "https://github.com/ChellyAhmed/Chelly",
+            description: "The website you are currently viewing, created using ReactJs."
+        },
+        {
+            title: "Mastermind",
+            link: "https://github.com/ChellyAhmed/mastermind",
+            description: "A knowledge-based AI Agent developed with Python to play the game Mastermind on console."
+        },
+        {
+            title: "QuizGame",
+            link: "https://github.com/ChellyAhmed/Chelly",
+            description: "A console-based quiz game that can be played between multiple hosts connected via sockets, created with Python."
+        },
+        {
+            title: "Roommie",
+            link: "https://github.com/ChellyAhmed/roommie",
+            description: "A roommate matching platform created using ReactJs, an ExpressJs server, and a SQL Database."
+        },
+    ]
+
     // To scroll to top when page is changed
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -48,21 +71,16 @@ function Portfolio() {
                 <p>Most of these projects are created within a team. Click on one to open the Github repository.</p>
             </div>
             <div className="container" alt={selectedPage} >
-                <TextProject
-                    title={"My personal website"}
-                    link={"https://github.com/ChellyAhmed/Chelly"}
-                    description={"The website you are currently viewing, created using ReactJs."}
-                />
-                <TextProject
-                    title={"Roommie"}
-                    link={"https://github.com/ChellyAhmed/roommie"}
-                    description={"A roommate matching platform created using ReactJs, an ExpressJs server, and a SQL Database."}
-                />
-                <TextProject
-                    title={"QuizGame"}
-                    link={"https://github.com/ChellyAhmed/Chelly"}
-                    description={"A console-based quiz game that can be played between multiple hosts connected via sockets, created with Python."}
-                />
+                {textProjects.map((project, index) => {
+                    return (
+                        <TextProject
+                            link={project.link}
+                            title={project.title}
+                            description={project.description}
+                            key={index}
+                        />
+                    )
+                })}
             </div>
             <div className='portfolio-div'>
                 <span>
