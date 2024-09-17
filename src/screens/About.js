@@ -40,6 +40,34 @@ function About() {
             <br />
 
             <div className="card" >
+                <h1>Experience:</h1>
+                <div className="card-body">
+                    <p>
+                        <span className="date" >May 2024 - August 2024</span> <br />
+                        <b>Software Engineering Intern</b> <br />
+                        <i>Monet Financial Technologies (Nuremberg, Germany)</i> <br />
+                    </p>
+                    <p>
+                        <span className="date" >May 2023 - August 2023</span> <br />
+                        <b>Research Intern</b> <br />
+                        <i>Mediterranean Institute of Technology (Tunis, Tunisia)</i> <br />
+                    </p>
+                    <p>
+                        <span className="date" >2021 - 2022</span> <br />
+                        <b>Graphic Designer</b> <br />
+                        <i>Birou Suite (Tunis, Tunisia)</i> <br />
+                    </p>
+                    <p>
+                        <span className="date" >June 2022</span> <br />
+                        <b>Web Developer intern</b> <br />
+                        <i>BluePen Labs (Tunis, Tunisia)</i> <br />
+                    </p>
+                </div>
+            </div>
+
+            <br />
+
+            <div className="card" >
                 <h1>Education:</h1>
                 <div className="card-body" alt={selectedPage}>
                     <p>
@@ -54,34 +82,6 @@ function About() {
                         <b>Pioneer High School of Sfax</b> <br />
                         <span className="date" >2016 - 2020</span> <br />
                         <i>Baccalaureate of Mathematics</i>
-                    </p>
-                </div>
-            </div>
-
-            <br />
-
-            <div className="card" >
-                <h1>Experience:</h1>
-                <div className="card-body">
-                    <p>
-                        <span className="date" >May 2023 - August 2023</span> <br />
-                        <b>Research Intern</b> <br />
-                        <i>Mediterranean Institute of Technology</i> <br />
-                    </p>
-                    <p>
-                        <span className="date" >2021 - 2022</span> <br />
-                        <b>Graphic Designer</b> <br />
-                        <i>Birou Suite</i> <br />
-                    </p>
-                    <p>
-                        <span className="date" >June 2022</span> <br />
-                        <b>Web Developer intern</b> <br />
-                        <i>BluePen Labs</i> <br />
-                    </p>
-                    <p>
-                        <span className="date" >August 2020</span> <br />
-                        <b>Graphic Design Trainer</b> <br />
-                        <i>Ecozone Coworking Space Sfax</i> <br />
                     </p>
                 </div>
             </div>
