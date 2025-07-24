@@ -27,6 +27,11 @@ function Portfolio() {
             description: "The website you are currently viewing, created using ReactJs."
         },
         {
+            title: "AiReal",
+            link: "https://github.com/ChellyAhmed/roommie",
+            description: "A Convolutional Neural Network trained to discriminate between AI-generated and real images"
+        },
+        {
             title: "Mastermind",
             link: "https://github.com/ChellyAhmed/mastermind",
             description: "A knowledge-based AI Agent developed with Python to play the game Mastermind on console."
@@ -35,11 +40,6 @@ function Portfolio() {
             title: "QuizGame",
             link: "https://github.com/ChellyAhmed/Chelly",
             description: "A console-based quiz game that can be played between multiple hosts connected via sockets, created with Python."
-        },
-        {
-            title: "Roommie",
-            link: "https://github.com/ChellyAhmed/roommie",
-            description: "A roommate matching platform created using ReactJs, an ExpressJs server, and a SQL Database."
         },
     ]
 
@@ -68,7 +68,7 @@ function Portfolio() {
 
             <div className='portfolio-div' >
                 <h1>Coding Projects</h1>
-                <p>Most of these projects are created within a team. Click on one to open the Github repository.</p>
+                <p>Most of these projects are created within a team. Some of them are more like side projects developed for fun. Click on one to open the Github repository.</p>
             </div>
             <div className="container" alt={selectedPage} >
                 {textProjects.map((project, index) => {

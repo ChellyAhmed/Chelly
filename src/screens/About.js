@@ -43,6 +43,11 @@ function About() {
                 <h1>Experience:</h1>
                 <div className="card-body">
                     <p>
+                        <span className="date" >January 2025 - June 2025</span> <br />
+                        <b>Software Engineering Intern</b> <br />
+                        <i>Monet Financial Technologies (Nuremberg, Germany)</i> <br />
+                    </p>
+                    <p>
                         <span className="date" >May 2024 - August 2024</span> <br />
                         <b>Software Engineering Intern</b> <br />
                         <i>Monet Financial Technologies (Nuremberg, Germany)</i> <br />
